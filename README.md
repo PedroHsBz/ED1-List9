@@ -66,43 +66,4 @@ O projeto inclui:
 |   └── main.java
 │   └── BookList.java
 └────── BookListTAD.java
-- **7. Exibir informações de estado**: Retorna em tempo real:
-  - Quantidade atual de músicas (`countMusic`).
-  - Se a playlist atingiu o limite máximo (`playListFull`).
-  - Se a playlist está totalmente sem músicas (`playListEmpty`).
-- **8. Exibir todos as músicas (display)**: Imprime a playlist formatada no console (ex: `[ 10 20 30 ]`).
-- **0. Sair**: Encerra a execução do programa.
 
----
-
-## 🛠️ Tratamento de Erros Implementado
-
-A classe `PlayList` foi construída para ser segura e evitar falhas de execução (como o temido `ArrayIndexOutOfBoundsException`). Os seguintes tratamentos foram incluídos:
-- Bloqueio de inserção caso a playlist já tenha atingido a capacidade máxima informada pelo utilizador.
-- Validação de índices negativos ou maiores do que a quantidade de elementos armazenados ao tentar inserir, ler ou modificar dados.
-- Verificação de lista vazia ao tentar remover ou buscar músicas.
-- Avisos via console se o utilizador tentar remover ou procurar um ID que não existe na playlist.
-
----
-## 🚀 Recursos Implementados
-
-O projeto inclui:
-
-- Código em Java puro (sem frameworks).
-- Organização lógica focada no controle de estado interno com variáveis encapsuladas (`private`).
-- Lógica de deslocamento de dados no array (shift right e shift left) para as operações de inserção e remoção de músicas.
-- Tratamento básico de erros com impressões no console para índices inválidos e bloqueio de inserção quando a playlist atinge a capacidade máxima.
-
----
-
-## 🧩 Estrutura de Pastas
-
-```text
-├── src
-|   └── main.java
-│   └── PlayList.java
-└────── PlayListTAD.java
-
-
-
-# ED1-List9
